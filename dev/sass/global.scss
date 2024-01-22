@@ -1,10 +1,38 @@
 body {
-    background: #282B38;;
+    background: $bg-primary;
+    .container {
+        max-width: 1170px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        .btn {
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 145%;
+            border-radius: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 0.6;
+        }
+        .btn-primary {
+            background-color: $color-primary;
+            width: 171px;
+            height: 50px;
+            border-radius: 90px;
+            border: none;
+            &:hover {
+                background-color: $color-secondary;
+            }
+            &:active {
+                background-color: $color-secondary;
+            }
+        }
+    }
 }
 
-.btn-primary {
-    background-color: #E58D35;
-    width: 171px;
-    height: 50px;
-    border-radius: 90px;
-}
+
+
+
+
