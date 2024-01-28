@@ -13,20 +13,45 @@
 			max-height: 60px;
 		}
 	}
+
+	li {
+		list-style: none;
+	}
 	
 	&__navigation {
 		width: 100%;
 		display: flex;
-        max-width: 602px;
-		justify-content: space-between;
-		a {
+
+		&-item-link {
             color: #fff;
-			text-decoration: none;
 			padding: 10px;
-			margin-top: 4px;
+			text-decoration: none;
 			&:hover {
 				color: $color-primary;
 			}
 		}
+
+		&-list {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 auto;
+			padding: 0;
+			max-width: 602px;
+		}
+	}
+
+	.btn {
+		padding: 13px 22px;
+		margin: 15px;
 	}
 }
+
+.header__navigation {
+    display: none;
+
+	&.show {
+		display: flex;
+	}
+}
+
