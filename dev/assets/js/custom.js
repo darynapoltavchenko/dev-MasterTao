@@ -1,11 +1,16 @@
-const burger = document.querySelector('.btn-burger');
-const navigation = document.querySelector('.header__navigation');
+$(document).ready(function(){
+    $('#banner').slick();
+  
 
-console.log(burger);
+    const burger = document.querySelector('.btn-burger');
+    const navigation = document.querySelector('.header__navigation');
 
-const toggleMenu =()=> {
+    console.log(burger);
+
+    const toggleMenu =()=> {
     burger.classList.toggle('open')
     navigation.classList.toggle('show');
-}
+    }
 
-burger.addEventListener('click', toggleMenu)
+    burger.addEventListener('click', toggleMenu)
+});
