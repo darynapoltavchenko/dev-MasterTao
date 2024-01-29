@@ -10,12 +10,12 @@
         &__navigation {
             position: fixed;
             inset: 90px 0 0;
+            padding: 15px 40px 90px;
             flex-direction: column;
             background-color: #363A4D;
 
             .btn {
                 justify-content: center;
-                margin: 0 40px 60px 40px;
                 padding-top: 34px;
                 padding-bottom: 34px;
                 max-width: 320px;
@@ -27,7 +27,6 @@
                 flex-direction: column;
                 margin-bottom: 48px;
                 margin: 22px auto 22px;
-                padding: 15px 40px 0px 40px;
             }
 
             &-item {
