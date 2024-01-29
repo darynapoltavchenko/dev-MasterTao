@@ -3,8 +3,8 @@ body {
     font-family: "ProximaNova";
     .container {
         max-width: 1170px;
-        padding-right: 15px;
-        padding-left: 15px;
+        padding-right: $container-padding;
+        padding-left: $container-padding;
         margin-right: auto;
         margin-left: auto;
         .btn {

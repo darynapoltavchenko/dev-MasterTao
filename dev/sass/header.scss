@@ -7,13 +7,6 @@
 		align-items: center;
 	}
 
-	&__logo {
-		max-width: 172px;
-		img {
-			max-height: 60px;
-		}
-	}
-
 	li {
 		list-style: none;
 	}
@@ -52,6 +45,40 @@
 
 	&.show {
 		display: flex;
+	}
+}
+
+.btn-burger {
+	padding: 1.25px 13.5px;
+    border: none;
+	position: relative;
+	
+	&:before,
+	&:after {
+		content: "";
+		top: -10px;
+		left: 0;
+		position: absolute;
+		height: 2.5px;
+		width: 27px;
+		background: #fff;
+		transition: 0.3s;
+	}
+
+	&:after {
+        content: "";
+		top: 10px;
+	}
+
+	&.open {
+		background: transparent;
+        &:after {
+			transform: rotate(45deg) translate(-10px, -10px);
+		}
+
+		&:before {
+			transform: rotate(-45deg) translate(-5px, 4px);
+		}
 	}
 }
 
