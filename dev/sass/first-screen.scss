@@ -1,0 +1,51 @@
+.first-screen {
+    position: relative;
+}
+
+.banner {
+    .slick-slide {
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        padding-bottom: 68px;
+        border-radius: 20px;
+    }
+
+    &-title {
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 126%;
+        max-width: 463px;
+        text-transform: uppercase;
+    }
+
+    &-subtitle {
+        color: #fff;
+        font-family: Proxima Nova;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 135,5%;
+        max-width: 345px;
+        margin-bottom: 37px;
+    }
+}
+
+.slick-dots {
+    margin: -51px 0 0;
+}
+
+.banner-arrows {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -24px);
+    width: 100%;
+    max-width: 1566px;
+    display: flex;
+    justify-content: space-between;
+}
+
+

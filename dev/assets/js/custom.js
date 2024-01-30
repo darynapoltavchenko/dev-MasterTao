@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('#banner').slick({
         fade: true,
         dots: true,
+        arrows: true,
+        appendArrows: $('.banner-arrows')
     });
   
 
