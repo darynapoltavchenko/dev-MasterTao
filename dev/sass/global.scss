@@ -36,6 +36,49 @@ body {
     color: #fff;
 }
 
+ul.slick-dots {
+    display: flex;
+    justify-content: center;
+}
+
+ul.slick-dots button {
+    width: 5px;
+    height: 5px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background: transparent;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    margin: 0 8px;
+    transition: .3s;
+}
+
+.slick-dots li {
+    list-style: none;
+    &:before {
+       display: none;
+    }
+}
+
+.slick-dots .slick-active button {
+    background-color: #fff;
+    width: 5px;
+}
+
+.slick-arrow {
+    width: 40px;
+    height: 90px;
+    font-size: 0;
+    line-height: 0;
+    background: url(../assets/img/vector022.svg) center/contain no-repeat;
+    border: none;
+}
+
+button.slick-prev.slick-arrow {
+    background: url(../assets/img/vector011.svg) center/contain no-repeat;
+}
+
 
 
 
