@@ -37,6 +37,10 @@
     margin: -51px 0 0;
 }
 
+.slick-dots li {
+    z-index: 2;
+}
+
 .banner-arrows {
     position: absolute;
     left: 50%;
