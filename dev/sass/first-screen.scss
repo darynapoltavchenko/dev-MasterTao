@@ -10,7 +10,9 @@
         display: flex;
         align-items: center;
         padding-bottom: 68px;
-        border-radius: 20px;
+        padding: 0 92px 68px;
+        height: calc(100vh - 68.18px);
+        background-position: center;
     }
 
     &-title {
@@ -34,11 +36,15 @@
 }
 
 .slick-dots {
-    margin: -51px 0 0;
+    margin: -51px 35px 0 0;
 }
 
 .slick-dots li {
     z-index: 2;
+}
+
+.slick-slide {
+    z-index: 999;
 }
 
 .banner-arrows {

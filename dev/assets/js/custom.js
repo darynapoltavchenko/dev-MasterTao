@@ -3,7 +3,16 @@ $(document).ready(function(){
         fade: true,
         dots: true,
         arrows: true,
-        appendArrows: $('.banner-arrows')
+        appendArrows: $('.banner-arrows'),
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ]
+
     });
   
 
