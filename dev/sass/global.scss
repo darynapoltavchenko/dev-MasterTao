@@ -1,5 +1,6 @@
 body {
     background: $bg-primary;
+    color: #fff;
     .container {
         max-width: 1170px;
         padding-right: $container-padding;
@@ -8,7 +9,7 @@ body {
         margin-left: auto;
         .btn {
             font-weight: 600;
-            font-size: 16px;
+            font-size: 14px;
             line-height: 145%;
             border-radius: 90px;
             display: inline-flex;
@@ -20,11 +21,11 @@ body {
         }
         .btn-primary {
             background-color: $color-primary;
-            height: 50px;
             border-radius: 90px;
             border: none;
             margin: 8px auto;
-            padding: 32px;
+            padding: 24px;
+            height: 50px;
             &:hover {
                 background-color: $color-secondary;
             }
@@ -46,15 +47,15 @@ ul.slick-dots {
 }
 
 ul.slick-dots button {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     padding: 0;
     font-size: 0;
     line-height: 0;
     background: transparent;
     border-radius: 20px;
-    border: 1px solid #fff;
-    margin: 0 8px;
+    border: 2px solid #fff;
+    margin-left: 25px;
     transition: .3s;
 }
 
@@ -67,7 +68,7 @@ ul.slick-dots button {
 
 .slick-dots .slick-active button {
     background-color: #fff;
-    width: 5px;
+    width: 8px;
 }
 
 .slick-arrow {
@@ -85,6 +86,59 @@ button.slick-prev.slick-arrow {
 
 .icon {
     padding-left: 20px;
+}
+
+.template-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 18px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #fff;
+
+    h2 {
+        line-height: 124.5%;
+        text-transform: uppercase;
+        margin-bottom: 6px;
+    }
+
+    h3 {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: calc(100% - 2px);
+        transform: translate(-50%, 0);
+        width: 85px;
+        height: 2px;
+        background-color: $color-secondary;
+    }
+
+    &.col-lg-7 {
+        margin-bottom: 35px;
+        text-align: left;
+        h2 {
+            &:after {
+                content: "";
+                display: inline-block;
+                width: 85px;
+                height: 2px;
+                margin: 10px;
+                background-color: $color-secondary;
+            }
+        }
+
+        &.template-title {
+            &:after {
+                display: none;
+            }
+        }
+    }
 }
 
 
