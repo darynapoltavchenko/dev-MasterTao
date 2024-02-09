@@ -1,3 +1,41 @@
+.charter {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $section-margin-lg;
+    max-width: 1920px;
+
+    &.container-fluid {
+        padding: 90px 85px 100px;
+        position: relative;
+
+        &::before {
+            content: "";
+            border-radius: 20px;
+            position: absolute;
+            left: 42px;
+            right: 42px;
+            top: 0;
+            height: 100%;
+            background-color: $bg-secondary;
+        }
+    }
+
+    &:nth-child(odd) {
+        .template-title {
+            &::after {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+}
+
 body {
     background: $bg-primary;
     color: #fff;
@@ -16,7 +54,6 @@ body {
             align-items: center;
             color: #fff;
             letter-spacing: 0.6;
-            padding: 17px 24px;
 		    margin: 15px;
         }
         .btn-primary {
@@ -33,6 +70,10 @@ body {
                 background-color: $color-secondary;
             }
         }
+
+        .btn-lg {
+            padding: 32px;
+        }
     }
 }
 
@@ -46,17 +87,22 @@ ul.slick-dots {
     justify-content: center;
 }
 
-ul.slick-dots button {
-    width: 8px;
-    height: 8px;
-    padding: 0;
-    font-size: 0;
-    line-height: 0;
-    background: transparent;
-    border-radius: 20px;
-    border: 2px solid #fff;
-    margin-left: 25px;
-    transition: .3s;
+ul.slick-dots {
+    padding-left: 0;
+
+    & button {
+        width: 8px;
+        height: 8px;
+        padding: 0;
+        font-size: 0;
+        line-height: 0;
+        background: transparent;
+        border-radius: 20px;
+        border: 2px solid #fff;
+        margin-left: 12px;
+        margin-right: 12px;
+        transition: .3s;
+    }
 }
 
 .slick-dots li {
@@ -100,6 +146,7 @@ button.slick-prev.slick-arrow {
         line-height: 124.5%;
         text-transform: uppercase;
         margin-bottom: 6px;
+        font-size: 36px;
     }
 
     h3 {
@@ -125,6 +172,7 @@ button.slick-prev.slick-arrow {
         h2 {
             &:after {
                 content: "";
+                position: static;
                 display: inline-block;
                 width: 85px;
                 height: 2px;
@@ -141,6 +189,47 @@ button.slick-prev.slick-arrow {
     }
 }
 
+.input-box {
+    label {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 126%;
+        margin-top: 1px;
+        margin-bottom: 6px;
+    }
+
+    input {
+        border-radius: 10px;
+        padding: 17px 20px;
+        font-size: 14px;
+        border: none;
+        transition: 0.2s;
+        width: 100%;
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:hover {
+        box-shadow: 0 0 4px 2px $color-primary;
+    }
+
+    &:focus {
+        box-shadow: 0 0 4px 2px $color-secondary;
+    }
+
+    &::placeholder {
+        color: #cbcbcb;
+    }
+    
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 126%;
+}
 
 
 

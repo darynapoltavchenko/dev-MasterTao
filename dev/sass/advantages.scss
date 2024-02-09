@@ -1,0 +1,58 @@
+.advantages {
+    @include default-bg;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin horizontal-list {
+    @include reset-list;
+
+    li {
+        display: inline-block;
+
+        margin: {
+            left: -2px;
+            right: 2em;
+        }
+    }
+}
+
+.advantages {
+    text-align: center;
+    .row {
+        row-gap: 48px;
+    }
+
+    h6 {
+        max-width: 205px;
+        margin: 0 auto;
+        font-weight: 400;
+    }
+}
+
+nav ul {
+    @include horizontal-list;
+}
+
+.icon-box {
+    height: 113px;
+    width: 113px;
+    border: 1px solid #6c7188;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 22px;
+    padding: 10px;
+
+    img {
+        width: 100%;
+        border-radius: 50%;
+        object-fit: none;
+        background: #89C249;
+    }
+}

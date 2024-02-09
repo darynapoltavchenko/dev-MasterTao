@@ -42,11 +42,6 @@
         }
     }
 
-    .img-fluid {
-		max-height: 49px;
-        max-width: 127px;
-	}
-
     .banner {
         padding: 0;
         .slick-slide {
@@ -85,6 +80,25 @@
             margin-bottom: 18px;
             max-width: 260px;
         }
+    }
+
+    .advantages {
+
+        .slick-list {
+            align-items: center;
+            justify-content: center;
+        }
+        .slick-dots {
+            left: auto;
+            right: auto;
+            transform: none;
+        }
+
+        
+    }
+
+    .advantages {
+        @include default-bg-mobile;
     }
 }
 
