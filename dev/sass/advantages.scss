@@ -21,6 +21,12 @@
     }
 }
 
+.template-title {
+    text-align: center;
+    padding-bottom: 12px;
+    margin-bottom: 35px;
+}
+
 .advantages {
     text-align: center;
     .row {
@@ -31,11 +37,8 @@
         max-width: 205px;
         margin: 0 auto;
         font-weight: 400;
+        margin-bottom: 48px;
     }
-}
-
-nav ul {
-    @include horizontal-list;
 }
 
 .icon-box {
@@ -56,3 +59,5 @@ nav ul {
         background: #89C249;
     }
 }
+
+
