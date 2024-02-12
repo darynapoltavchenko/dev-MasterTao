@@ -41,7 +41,14 @@ $(document).ready(function(){
           return slider.slick(settings);
         }
       });
-    } // Mobile Only Slider
+    }
+
+
+    $('.slider-template').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
   
 
     const burger = document.querySelector('.btn-burger');
