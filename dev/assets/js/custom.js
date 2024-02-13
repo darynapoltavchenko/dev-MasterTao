@@ -47,7 +47,29 @@ $(document).ready(function(){
     $('.slider-template').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1025,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                }
+            }
+            
+        ]
     });
   
 

@@ -108,6 +108,15 @@
     .advantages {
         @include default-bg-mobile;
     }
+
+    .slider-template {
+        width: 390px;
+        margin: 0 auto;
+
+        .slick-slide {
+            margin: 0 15px;
+        }
+    }
 }
 
 

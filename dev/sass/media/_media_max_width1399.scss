@@ -1,0 +1,14 @@
+@media screen and (max-width: 1399px) {
+    .slider-template {
+        width: 780px;
+        margin: 0 auto;
+
+        .slick-prev.slick-arrow {
+            left: -70px;
+        }
+        
+        .slick-next.slick-arrow {
+            right: -70px;
+        }
+    }
+}

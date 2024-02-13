@@ -1,3 +1,17 @@
 @media screen and (max-width: 767px) {
+    .slider-template {
+        width: 100%;
+        .slick-slide {
+            margin: 0;
+        }
+    }
 
+    .template-card-btn-row {
+        .btn {
+            width: 100%;
+            justify-content: center;
+            padding: 13px 10px;
+            letter-spacing: 0;
+        }
+    }
 }
