@@ -1,0 +1,50 @@
+.services {
+    margin-top: 100px;
+    .template-card {
+        position: relative;
+        text-align: left;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(180deg, transparent 0%, #000000bf 100%);
+            z-index: 1;
+        }
+
+        >.img-box {
+            img {
+                position: absolute;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                top: 0;
+            }
+        }
+
+        .template-card__title,
+        .template-card__subtitle,
+        .template-card-btn-row {
+            position: relative;
+            z-index: 1;
+        }
+
+        .template-card__subtitle {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    .template-card-btn-row {
+        width: 50%;
+        button {
+            background-color: transparent;
+        }
+    }
+}

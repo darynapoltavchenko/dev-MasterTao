@@ -34,7 +34,7 @@ $(document).ready(function(){
       slider.slick(settings);
     
       $(window).on("resize", function () {
-        if ($(window).width() > $breakpoint) {
+        if ($(window).width() > 1024) {
           return;
         }
         if (!slider.hasClass("slick-initialized")) {

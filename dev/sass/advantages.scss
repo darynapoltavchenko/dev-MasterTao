@@ -1,5 +1,6 @@
 .advantages {
     @include default-bg;
+    margin-top: 0;
 }
 
 @mixin reset-list {
@@ -24,17 +25,15 @@
 .template-title {
     text-align: center;
     padding-bottom: 12px;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
 }
 
 .advantages {
     text-align: center;
-    .row {
-        row-gap: 48px;
-    }
+    
 
     h6 {
-        max-width: 205px;
+        max-width: 260px;
         margin: 0 auto;
         font-weight: 400;
         margin-bottom: 48px;
