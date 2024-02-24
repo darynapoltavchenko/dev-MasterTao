@@ -48,9 +48,6 @@ $(document).ready(function(){
 
     $('.slider-template').slick({
         infinite: true,
-        fade: true,
-        dots: true,
-        arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
@@ -64,12 +61,17 @@ $(document).ready(function(){
                 breakpoint: 1025,
                 settings: {
                     slidesToShow: 1,
+                    fade: true,
+                    dots: true,
+                    arrows: true,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    arrows: false,
+                    fade: true,
+                    dots: true,
+                    arrows: true,
                     slidesToShow: 1,
                 }
             }
