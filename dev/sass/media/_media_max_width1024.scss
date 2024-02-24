@@ -1,7 +1,14 @@
 @media screen and (max-width: 1024px) {
     
-    h2 {
-        font-size: 24px;
+    .template-title {
+        h2 {
+            font-size: 24px;
+        }
+    }
+
+    .icon-box {
+        width: 126px;
+        height: 126px;
     }
 
     .container {
@@ -11,6 +18,10 @@
 
     .header {
         padding: 17px 0 15px;
+
+        .img-fluid {
+            max-width: 132px;
+        }
 
         &__navigation {
             position: fixed;
@@ -42,10 +53,15 @@
             &-item-link {
                 font-size: 24px;
                 line-height: 222%;
-
             }
         }
     }
+
+    .first-screen {
+        margin-bottom: 55px;
+    }
+
+   
 
     .banner {
         padding: 0;
@@ -93,11 +109,6 @@
             align-items: center;
             justify-content: center;
         }
-        .slick-dots {
-            left: auto;
-            right: auto;
-            transform: none;
-        }
 
         &.container-fluid {
             background-color: #363A4D;
@@ -105,8 +116,32 @@
         }
     }
 
+    .slick-dots {
+        left: auto;
+        right: auto;
+        transform: none;
+        bottom: 0;
+
+        button {
+            margin-left: 21px;
+            margin-right: 7px;
+        }
+    }
+
+    .slick-dots {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 0;
+        bottom: 0;
+        transform: none;
+        position: relative;
+        margin-top: 15px;
+    }
+
     .advantages {
         @include default-bg-mobile;
+        margin-bottom: 60px;
     }
 
     .slider-template {
@@ -118,14 +153,42 @@
         }
     }
 
-    .services {
+    .services.charter.container-fluid {
         background-color: $bg-secondary;
+        padding: 49px 0px 50px;
+
+        .template-card {
+            min-width: none;
+            min-height: none;
+            width: 100%;
+            padding: 32px;
+
+            .img-box {
+                margin: 0;
+            }
+
+            &__title {
+                padding-bottom: 10px;
+            }
+
+            &__subtitle {
+                font-size: 14px;
+                padding-right: 20px;
+            }
+        }
+
+        
     }
 
     .calculation {
+        margin-bottom: 7px;
         .template-title {
             text-align: center;
+            margin-bottom: 70px;
             h2 {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 135%;
                 &:after {
                     content: "";
                     position: absolute;
@@ -139,17 +202,49 @@
             } 
         }
 
+        &-form {
+            min-width: auto;
+            padding: 50px 40px 37px;
+            gap: 10px;
+            margin-bottom: 55px;
+        }
+
         &-row {
             align-items: center;
             justify-content: center;
         }
         
         .input-row {
-            display: block;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .input-column {
+            gap: 26px;
+
+            .btn {
+                height: 70px;
+                width: 100%;
+                align-items: center;
+            }
         }
 
         .calculation-decoration {
             display: none;
+        }
+
+        .icon {
+            margin-left: auto;
+        }
+    }
+
+    .delivery {
+        .slider-template {
+            .template-card {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
         }
     }
 }

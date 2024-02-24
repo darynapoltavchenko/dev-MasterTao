@@ -1,2 +1,3 @@
 section.container-fluid:before { z-index: -1; }
-.header__navigation            { z-index: 1; }
+.header__navigation.show       { z-index: 1; }
+li.slick-dots                  { z-index: 3; }

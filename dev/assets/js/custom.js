@@ -15,6 +15,8 @@ $(document).ready(function(){
 
     });
 
+    
+
     mobileOnlySlider("#slider-advantages", true, false, 1024);
 
     function mobileOnlySlider($slidername, $dots, $arrows, $breakpoint) {
@@ -46,6 +48,9 @@ $(document).ready(function(){
 
     $('.slider-template').slick({
         infinite: true,
+        fade: true,
+        dots: true,
+        arrows: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         responsive: [
