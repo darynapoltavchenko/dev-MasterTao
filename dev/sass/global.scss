@@ -2,7 +2,6 @@
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: $section-margin-lg;
     max-width: 1920px;
 
     &.container-fluid {
@@ -60,7 +59,7 @@ body {
             background-color: $color-primary;
             border-radius: 90px;
             border: none;
-            margin: 8px auto;
+            margin: 15px 0;
             padding: 24px;
             height: 50px;
             &:hover {
@@ -181,6 +180,7 @@ button.slick-prev.slick-arrow {
     &.col-lg-7 {
         margin-bottom: 35px;
         text-align: left;
+        max-width: 800px;
         h2 {
             &:after {
                 content: "";

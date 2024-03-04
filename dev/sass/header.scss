@@ -9,7 +9,6 @@
 
 	.img-fluid {
 		max-width: 172px;
-		margin-right: 52px;
 	}
 
 	li {
@@ -35,9 +34,14 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin: 0 60px 0 auto;
+			margin: auto;
 			padding: 0;
 		}
+	}
+
+	.btn-primary {
+		width: 171px;
+		margin: 15px
 	}
 }
 

@@ -3,6 +3,13 @@
         max-width: 550px;
     }
 
+    .header {
+        &-title,
+        &-subtitle {
+            margin-left: 15px;
+        }
+    }
+
     li.header__navigation-item {
         padding-left: 0;
         padding-right: 0;

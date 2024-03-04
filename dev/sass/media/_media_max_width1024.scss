@@ -4,6 +4,10 @@
         h2 {
             font-size: 24px;
         }
+
+        &.col-lg-7 {
+            max-width: 100%;
+        }
     }
 
     .icon-box {
@@ -67,6 +71,7 @@
         padding: 0;
         .slick-slide {
             padding: 0 40px;
+            height: calc(100vh - 70px);
             &::before {
                 content: "";
                 position: absolute;
@@ -117,26 +122,19 @@
     }
 
     .slick-dots {
-        left: auto;
-        right: auto;
-        transform: none;
         bottom: 0;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        left: 0;
+        transform: none;
+        position: relative;
+        margin-top: 15px;
 
         button {
             margin-left: 21px;
             margin-right: 7px;
         }
-    }
-
-    .slick-dots {
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        left: 0;
-        bottom: 0;
-        transform: none;
-        position: relative;
-        margin-top: 15px;
     }
 
     .advantages {

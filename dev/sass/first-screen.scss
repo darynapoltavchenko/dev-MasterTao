@@ -4,13 +4,13 @@
 }
 
 .banner {
+    margin-bottom: 100px;
     .slick-slide {
         height: 700px;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
         align-items: center;
-        height: calc(100vh - 110.99px);
         background-position: center;
     }
 
@@ -31,6 +31,14 @@
         line-height: 135,5%;
         max-width: 345px;
         margin-bottom: 28px;
+    }
+
+    .container {
+        padding-bottom: 50px;
+        .btn-lg {
+            width: 295px;
+            height: 68px;
+        }
     }
 }
 
