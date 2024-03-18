@@ -35,9 +35,14 @@
     height: auto;
 }
 
+.slick-slider {
+    padding-bottom: 35px;
+}
+
 body {
     background: $bg-primary;
     color: #fff;
+    margin-bottom: 100px;
     .container {
         max-width: 1170px;
         padding-right: $container-padding;
@@ -94,12 +99,12 @@ body {
 }
 
 ul.slick-dots {
+    position: absolute;
     display: flex;
     justify-content: center;
-}
-
-ul.slick-dots {
     padding-left: 0;
+    width: 100%;
+    transform: translate(0, 20px);
 
     & button {
         width: 8px;
